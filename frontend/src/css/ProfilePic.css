@@ -1,0 +1,59 @@
+.darkBg{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.centered{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.changePic{
+    background-color: white;
+    border-radius: 10px;
+}
+.changePic div{
+    padding: 10px 80px;
+}
+.uploadbtn{
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.process-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .process{
+    width: 80px;
+    height: 80px;
+    border: 8px solid #f0f0f0;
+    border-top: 10px solid #4fa94d;
+    border-bottom: 10px solid #191baa;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
